@@ -234,6 +234,7 @@ transition: all .3s ease;
     width: 300px;
     /* display: flex; */
     align-items: center;
+    justify-content: center;
 }
 
 section.reviews .slider .slide{
@@ -248,6 +249,7 @@ section.reviews .slider .slide{
     font-weight: 300;
     text-decoration: none;
     color: #161616;
+    
 }
 
 .project-link:hover{
