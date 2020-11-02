@@ -236,6 +236,8 @@ transition: all .3s ease;
     align-items: center;
     justify-content: center;
     /* text-align: center; */
+    margin-left: 25rem;
+    /* margin-right: 50%; */
 }
 
 section.reviews .slider .slide{
@@ -270,7 +272,7 @@ section.work{
 section.work .card-wrapper{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-}
+} 
 
 section.work .card-wrapper .card{
 position: relative;
