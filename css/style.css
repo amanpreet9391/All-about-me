@@ -18,6 +18,11 @@
 body{
     font-family: 'Poppins',sans-serif;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 header{
     background-color: var(--dark);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
@@ -32,6 +37,10 @@ header{
     color: var(--primary);
     text-decoration: none;
 
+}
+.contact-button{
+    text-decoration: none;
+    color: var(--dark);
 }
 .resume:hover{
     color: var(--pure);
@@ -235,12 +244,12 @@ transition: all .3s ease;
     transform: translateX(-50%);
 }
 .project{
-    width: 300px;
+    width: 250px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    justify-content: left;
     /* text-align: center; */
-    margin-left: 25rem;
+    /* margin-left: 25rem; */
     /* margin-right: 50%; */
 }
 
@@ -251,11 +260,16 @@ section.reviews .slider .slide{
 .project-link{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
+    margin-left: 15rem; 
+    /* height: 4rem; */
+    /* margin-bottom: 5rem; */
+    /* margin-top: -5rem;  */
     font-size: 1.25rem;
     font-weight: 300;
     text-decoration: none;
     color: #161616;
+    /* padding-bottom: 5rem; */
     
 }
 
@@ -263,34 +277,132 @@ section.reviews .slider .slide{
     color: var(--primary);
 }
 
+section.reviews p{
+
+    margin-bottom: 5rem;
+    margin-top: -13rem;
+    margin-left: 20rem;
+
+}
 section.work{
     background: var(--light);
 }
-.ios{
-    width: 200px;
-    /* border-radius: 50%; */
-    height: 8.5rem;
-    width: 8.5rem;
-}
+
+
 
 section.work .card-wrapper{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
 } 
 
 section.work .card-wrapper .card{
 position: relative;
+height: 100px;
+width: 100px;
 
 }
-/* section.work .card-wrapper .card .overlay{
+section.work .card-wrapper .card .overlay{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(61,207, 211, 0.9);
+    background: rgba(156, 232, 235, 0.9);
     display: flex;
     justify-content: center;
     align-items: center;
-} */
+    flex-direction: column;
+    color: var(--light);
+    opacity: 0;
+    transition: all 0.3s ease;
 
+}
+section.work .card-wrapper .card:hover .overlay{
+    opacity: 1;
+}
+section.work .card-wrapper .card .overlay a{
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+section.work .card-wrapper .card img{
+height: 100%;
+width: 100%;
+}
+
+.phone{
+    height: 4rem;
+    width: 4rem;  
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+section.contact .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+section.contact .card-wrapper .card{
+    text-align: center;
+}
+
+section.contact .card-wrapper .card h1{
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+section.contact .card-wrapper .card h6{
+    font-size: 1rem;
+    color: var(--ternary);
+    margin-bottom: 4rem;
+}
+
+section.contact .input-wrap{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+
+}
+section.contact .input-wrap-2{
+    display: flex;
+    flex-direction: column;
+    
+}
+section.contact .input-wrap-2 input{
+    margin-bottom: 2rem;
+    border: 1px solid var(--light);
+    font-size: 0.8rem;
+}
+section.contact .input-wrap-2 textarea{
+    padding: 0.5rem;
+    border: 1px solid var(--light);
+    font-size: 1.2rem;
+}
+section.contact input{
+    padding: 0.5rem;
+    border: 1px solid var(--light);
+    font-size: 0.8rem;
+
+
+}
+section.contact .input-wrap-2 textarea:focus{
+    outline: none;
+}
+section.contact input:focus{
+outline: none;
+}
+
+section.contact .btn-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+}
+footer{
+    background: var(--dark);
+    text-align: center;
+    padding: 3rem 0;
+}
+
+footer .copyright{
+    color: var(--ternary);
+}

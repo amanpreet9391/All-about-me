@@ -34,14 +34,14 @@
             </div> -->
             <div>
                 <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Toolbox</a>
-                <a href="#">Projects</a>
-                <a href="#">Work in Progress</a>
+                <a href="#about">About</a>
+                <a href="#toolbox">Toolbox</a>
+                <a href="#projects">Projects</a>
+                <a href="#progress">Learning in Progress</a>
             </div>
             </div>
             <div class="right"> 
-                <button class="btn btn-primary">Contact</button>
+                <button  class="btn btn-primary"><a class ="contact-button" href="#contact">Contact</a></button>
             </div>
         </nav>
         <div class="hero flex items-center justify-between">  
@@ -52,7 +52,7 @@
                 <p>I'm Amanpreet Kaur.<br>
                 A DevOps Engineer by profession and a dancer by heart.<br>
                 Love solving problems and to learn new stuff every single day. <br>
-                Wanna know more about the professional background, checkout my <a href="https://drive.google.com/file/d/121vvff79PCGRrlnfvtxNyNwGzvPLacDd/view?usp=sharing" target="_blank" alt="" class="resume">Resume</a>.
+                To know more about the professional background, checkout my <a href="https://drive.google.com/file/d/121vvff79PCGRrlnfvtxNyNwGzvPLacDd/view?usp=sharing" target="_blank" alt="" class="resume">RESUME</a>.
                 </p>
             
             </div>
@@ -63,7 +63,7 @@
     </div>
     </header>
 
-<section class="about">
+<section id="about" class="about">
     <div class="container flex items-center">
         <div class="flex-1">
         <img class = "about-me-image" src="./images/pic-2.png" alt="">
@@ -78,8 +78,8 @@
             All the successful people in the history have been lifetime learners.<br>
            And I truely believe in the same :)<br>
            My family and friends are my pillars of strength and I love spending time with them<br>
-           A true F.R.I.E.N.D.S fan.<br>
-           So, how you doing?
+           A Big F.R.I.E.N.D.S fan.<br>
+           So, how you doing?(With Joey's expressions)
         </p>
         <div class="social justify-between">
             
@@ -97,10 +97,10 @@
     </div>
  </div>
 </section>
-<section class="services">
+<section id = "toolbox" class="services">
 <div class="container">
 <h1 class="section-heading"> <span> My</span> Toolbox</h1>
-<p>In simple words things I have learnt and love to work with.</p>
+<p>Things I have learnt and love to work with.</p>
 <div class="card-wrapper">
     <div class="card"> 
         <i class="fab fa-jenkins jenkins-card"></i>
@@ -144,7 +144,7 @@
 </div>
 </section>
 
-<section class="reviews">
+<section id="projects" class="reviews">
 <div class="container">
     <h1 class="section-heading">
         <span>Recent</span> Projects
@@ -152,9 +152,9 @@
     <div>
 
     <div> <img class ="project" src="./images/project.png">
-    <p><a class = "project-link" href="https://github.com/amanpreet9391/CI-CD-Pipeline-using-Jenkins" target="_blank">complete CI-CD workflow with Jenkins </a> </br>
-    <a class = "project-link" href="https://github.com/amanpreet9391/Terraform-with-Ansible" target="_blank">Terraform with Ansible</a><br>
-<a class = "project-link" href=# target="_blank"> Python project</a></p>
+    <p ><a class = "project-link" href="https://github.com/amanpreet9391/CI-CD-Pipeline-using-Jenkins" target="_blank">(1) Complete CI-CD workflow with Jenkins </a> </br>
+    <a class = "project-link" href="https://github.com/amanpreet9391/Terraform-with-Ansible" target="_blank">(2) Terraform with Ansible</a><br>
+<a class = "project-link" href="https://github.com/amanpreet9391/Entry-Management-Software" target="_blank"> (3) Entry management Software in Python</a></p>
 </div>
 
 
@@ -163,7 +163,9 @@
 
 </section>
 
-<section class="work">
+
+
+<section id="progress" class="work">
     <div class="container">
         <h1 class="section-heading"> Learning in <span>Progress</span></h1>
         <p>I am always fascinated by this fact that there is so much scope of learning and growing specially in Tech domain. <br>
@@ -172,37 +174,87 @@
 Even the famous saying "Jack of all and master of none" got a new version these days, "Jack of all and master of some"<br>
 Here are the things which I am as of now investigating -</p>
 
-   
+   <div class="card-wrapper">
+<div class="card">
+<div class="overlay">
+<!-- <span>Category</span> -->
+<a href="#">iOS</a>
+</div>
+    <img  src="./images/ios.png" alt="">
 
-<div class="card-wrapper"> 
+</div>
 
-    <div class="card">  
-    <div class="overlay"> 
+
+<div class="card">
+    <div class="overlay">
         <!-- <span>Category</span> -->
-        <a href="#">iOS</a>
-    </div>
-    <img class= "ios" src="./images/ios.png">
-    </div>
-    
-    <div class="card"> 
-        <div class="overlay"> 
-            <!-- <span>Category</span> -->
-            <a href="#">Prometheus</a>
-        </div> 
-    <img class= "ios" src="./images/prometheus.png">
-    </div>
-    
-    <div class="card">  
-        <div class="overlay"> 
-            <!-- <span>Category</span> -->
-            <a href="#">Elastic Stack</a>
+        <a href="#">Elastic stack</a>
         </div>
-    <img class= "ios" src="./images/elastic-stack.png">
-    </div>
-    
-    </div> 
+    <img  src="./images/elastic-stack.png" alt="" style="height: 6.5rem;">
 
+</div>
+
+
+<div class="card">
+    <div class="overlay">
+        <!-- <span>Category</span> -->
+        <a href="#">Prometheus</a>
+        </div>
+    <img  src="./images/prometheus.png" alt="">
+
+
+</div>
+
+
+   </div>
+
+</div>
 </section>
+
+
+<section id="contact" class="contact">
+<div class="container">
+    <h1 class="section-heading">Get in <span>Touch</span></h1>
+    <div class="card-wrapper">
+        <div class="card">
+            <span class="iconify phone" data-icon="entypo:mobile" data-inline="false"></span>
+            <h1>Phone</h1>
+            <h6>+91 8003030099</h6>
+        </div>
+        <div class="card">
+            <span class="iconify phone" data-icon="bx:bx-envelope" data-inline="false"></span>
+            <h1>Email</h1>
+            <h6>amanpreet9391@gmail.com</h6>
+        </div>
+
+
+
+    </div>
+<form action="">
+    <div class="input-wrap">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        </div>
+        
+        <div class="input-wrap-2">
+        <input type="text" placeholder="Your Subject">
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message .."></textarea>
+        </div>
+        
+        <div class="btn-wrapper">
+            <button class="btn btn-primary">Send Message</button>
+        </div>
+</form>
+
+
+
+</div>
+</section>
+<footer>
+    <div class="copyright">
+        Copyright 2020 @ Amanpreet Kaur. All rights reserved.
+    </div>
+</footer>
 
 
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
