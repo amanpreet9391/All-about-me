@@ -232,6 +232,8 @@ transition: all .3s ease;
 }
 .project{
     width: 300px;
+    /* display: flex; */
+    align-items: center;
 }
 
 section.reviews .slider .slide{
