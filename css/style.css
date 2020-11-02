@@ -232,9 +232,10 @@ transition: all .3s ease;
 }
 .project{
     width: 300px;
-    /* display: flex; */
+    display: flex;
     align-items: center;
     justify-content: center;
+    /* text-align: center; */
 }
 
 section.reviews .slider .slide{

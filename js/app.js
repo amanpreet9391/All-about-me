@@ -1,5 +1,5 @@
-$(document).ready(function(){
-    $('.slider').slick({
+// $(document).ready(function(){
+//     $('.slider').slick({
 
-    });
-});
+//     });
+// });
