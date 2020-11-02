@@ -31,6 +31,10 @@ header{
 .resume{
     color: var(--primary);
     text-decoration: none;
+
+}
+.resume:hover{
+    color: var(--pure);
 }
 header nav .left a{
     color: var(--pure);
